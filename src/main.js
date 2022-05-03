@@ -307,6 +307,7 @@ const startCreating = async () => {
         randomIndices.push(element.id);
       }
     });
+    if (ans.length > totalCount) console.log("Trait Count Exceeded.");
     for (let i = ans.length; i < totalCount; i++) {
       ans.push(randomIndices[Math.floor(Math.random() * randomIndices.length)]);
     }
